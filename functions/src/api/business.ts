@@ -20,6 +20,8 @@ app.post("/",
   [
     useAuthorization,
     useHasRequiredFields(["id", "businessName", "businessCategory", "email"])],
+  // Have a middleware to handle validation
+  // useValidator({ "email": validators.isEmail }),
   (req: any, res: express.Response) => {
     return handler.create({ model: usersModel, req, res });
   });

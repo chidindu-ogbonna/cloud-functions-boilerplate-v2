@@ -75,3 +75,5 @@ lib/**/*.js.map
 typings/
 # functions/firebase-debug.log
 # functions/ui-debug.log
+functions/lib
+*.code-workspace
